@@ -28,7 +28,7 @@
         </section>
     </div>
 
-    @include('partials/mainbanner');
+    @include('partials/mainbanner')
 
 </main>
 @endsection

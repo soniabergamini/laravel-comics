@@ -88,7 +88,7 @@
                 </div>
             </section>
 
-            @include('partials.mainbanner');
+            @include('partials.mainbanner')
 
         </main>
         @break
