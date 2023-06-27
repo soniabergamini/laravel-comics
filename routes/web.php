@@ -14,9 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    // Header Data
     $navItems = config('store.navItems');
+    // Footer Data
+    $dcItems = config('store.dcItems');
+    $sitesItems = config('store.sitesItems');
+    $socialLinks = config('store.socialLinks');
+    $footerArray = array('dcItems' => $dcItems, 'sitesItems' => $sitesItems, 'socialLinks' => $socialLinks);
+    // Content Data
     $links = config('store.someLinks');
-    return view('welcome', compact('links'), compact('navItems'));
+    return view('welcome', compact('navItems'), compact('footerArray'));
 });
 
 Route::get('/otherpage', function () {

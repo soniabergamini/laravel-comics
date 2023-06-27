@@ -14,3 +14,24 @@ header li {
         color: #0182F9;
     }
 }
+
+#footerLinks {
+    background-image: url(../img/footer-bg.jpg);
+
+    section>div:first-child li {
+        margin-top: -.4em;
+
+        a {
+            color: grey;
+            font-size: 10px;
+
+            &:hover {
+                color: #0182F9;
+            }
+        }
+    }
+
+    section>div:last-child {
+        background-image: url(../img/dc-logo-bg.png);
+    }
+}
