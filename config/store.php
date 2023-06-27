@@ -22,6 +22,33 @@ return [
         //     'Shop Harley Quinn'
         // ]
     ],
+    'dcAssets' => [
+        [
+            'path' => 'buy-comics-digital-comics.png',
+            'alt' => 'buy-digital-img',
+            'text' => 'Digital Comics'
+        ],
+        [
+            'path' => 'buy-comics-merchandise.png',
+            'alt' => 'buy-merch-img',
+            'text' => 'DC Merchandise'
+        ],
+        [
+            'path' => 'buy-comics-subscriptions.png',
+            'alt' => 'buy-sub-img',
+            'text' => 'Subscription'
+        ],
+        [
+            'path' => 'buy-comics-shop-locator.png',
+            'alt' => 'shop-locator-img',
+            'text' => 'Comic Shop Locator'
+        ],
+        [
+            'path' => 'buy-dc-power-visa.svg',
+            'alt' => 'power-visa-img',
+            'text' => 'DC Power Visa'
+        ],
+    ],
     'dcItems' => [
                 'Terms Of Use',
                 'Privacy Policy (New)',
