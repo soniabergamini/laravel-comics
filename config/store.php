@@ -63,20 +63,5 @@ return [
                     'path' => 'footer-periscope.png',
                     'alt' => 'peri-icon'
                 ],
-    ],
-    'someLinks' => [
-        [
-            "href" => "/",
-            "text" => "Home Page",
-        ],
-        [
-            "href" => "/otherpage",
-            "text" => "Other Page",
-        ],
-        [
-            "href" => "https://laravel.com/docs/9.x",
-            "text" => "Documentation",
-        ]
-    ],
-    'someOtherData' => [ 42, 37, 73],
+    ]
 ];

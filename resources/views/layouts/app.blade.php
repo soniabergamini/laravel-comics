@@ -17,9 +17,8 @@
     <!--  Includo l'header del sito web con il menu tramite un partial -->
     @include('partials.header')
 
-    <main class="text-white">
-        @yield('content')
-    </main>
+    <!--  Includo il Contenuto Specifico della pagina tramite Yield -->
+    @yield('content')
 
     <!-- Includo il footer del sito web tramite un partial -->
     @include('partials.footer')
