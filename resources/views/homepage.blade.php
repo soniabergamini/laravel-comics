@@ -14,8 +14,10 @@
                 @foreach ($slides as $item)
                     <div
                         class="w-[calc(100%/3-1rem)] md:w-[calc(100%/4-1rem)] lg:w-[calc(100%/6-1rem)] flex items-center flex-col gap-y-2.5 pad-[0.5em] h-48 cursor-pointer text-left">
-                        <img src="{{ url($item['thumb']) }}" alt="cover-img" class="object-cover h-[150px] w-[150px] object-top">
-                        <span class="text-[0.625rem]">{{ Str::upper($item['series']) }}</span>
+                        <a href="{{url('comics/'.$item['series'].'/')}}">
+                            <img src="{{ url($item['thumb']) }}" alt="cover-img" class="object-cover h-[150px] w-[150px] object-top">
+                        </a>
+                        <span class="text-[0.625rem]" onclick="window.location=`{{ url('comics/'.$item['series'].'/') }}`">{{ Str::upper($item['series']) }}</span>
                     </div>
                 @endforeach
             </section>

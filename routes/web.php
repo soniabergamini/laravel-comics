@@ -27,10 +27,22 @@ Route::get('/', function () {
     $socialLinks = config('store.socialLinks');
     $footerArray = array('dcItems' => $dcItems, 'sitesItems' => $sitesItems, 'socialLinks' => $socialLinks);
 
-    return view('welcome', compact('navItems'), compact('footerArray'))->with(compact('slides'))->with(compact('dcAssets'));
-});
+    return view('homepage', compact('navItems'), compact('footerArray'))->with(compact('slides'))->with(compact('dcAssets'));
+})->name('homepage');
 
-Route::get('/otherpage', function () {
-    $links = config('store.someLinks');
-    return view('other', compact('links'));
-});
+Route::get('/comics/{series}', function (string $series) {
+    // Header Data
+    $navItems = config('store.navItems');
+
+    // Content Data
+    $comic = config('comics');
+    $slides = array('comics' => $comic, 'serie' => $series);
+
+    // Footer Data
+    $dcItems = config('store.dcItems');
+    $sitesItems = config('store.sitesItems');
+    $socialLinks = config('store.socialLinks');
+    $footerArray = array('dcItems' => $dcItems, 'sitesItems' => $sitesItems, 'socialLinks' => $socialLinks);
+
+    return view('comics', compact('navItems'))->with(compact('slides'))->with(compact('footerArray'));
+})->name('comics');
