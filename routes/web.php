@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $navItems = config('store.navItems');
     $links = config('store.someLinks');
-    return view('welcome', compact('links'));
+    return view('welcome', compact('links'), compact('navItems'));
 });
 
 Route::get('/otherpage', function () {

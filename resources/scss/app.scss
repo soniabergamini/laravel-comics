@@ -2,18 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-color: #222;
-    color: white;
-}
+header li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: 500;
+    font-size: medium;
 
-header,
-footer {
-    width: 100%;
-    background: #EEE;
-    color: black;
-}
-
-header img.logo {
-    height: 2rem;
+    &:hover {
+        border-bottom: 4px solid #0182F9;
+        color: #0182F9;
+    }
 }

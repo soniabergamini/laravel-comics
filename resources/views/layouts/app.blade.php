@@ -5,17 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('page-title', 'Hello Laravel World')</title>
-    <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>@yield('page-title', 'DC COMICS')</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ Vite::asset('resources/img/favicon.ico') }}"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
 </head>
 
-<body class="">
+<body class="max-w-screen-2xl box-border">
     <!--  Includo l'header del sito web con il menu tramite un partial -->
     @include('partials.header')
 
-    <main>
+    <main class="text-white">
         @yield('content')
     </main>
 

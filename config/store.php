@@ -1,6 +1,27 @@
 <?php
 
 return [
+    'navItems' => [
+        'Characters',
+        'Comics',
+        'Movies',
+        'TV',
+        'Games',
+        'Collectibles',
+        'Videos',
+        'Fans',
+        'News',
+        'Shop',
+        // 'Shop' => [
+        //     'DC Shop',
+        //     'New Arrivals',
+        //     'Most Popular',
+        //     'Shop The Flash',
+        //     'Shop Superman',
+        //     'Shop Batman',
+        //     'Shop Harley Quinn'
+        // ]
+    ],
     'someLinks' => [
         [
             "href" => "/",
