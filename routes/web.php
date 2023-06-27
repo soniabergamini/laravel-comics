@@ -37,6 +37,7 @@ Route::get('/comics/{series}', function (string $series) {
     // Content Data
     $comic = config('comics');
     $slides = array('comics' => $comic, 'serie' => $series);
+    $dcAssets = config('store.dcAssets');
 
     // Footer Data
     $dcItems = config('store.dcItems');
@@ -44,5 +45,5 @@ Route::get('/comics/{series}', function (string $series) {
     $socialLinks = config('store.socialLinks');
     $footerArray = array('dcItems' => $dcItems, 'sitesItems' => $sitesItems, 'socialLinks' => $socialLinks);
 
-    return view('comics', compact('navItems'))->with(compact('slides'))->with(compact('footerArray'));
+    return view('comics', compact('navItems'))->with(compact('slides'))->with(compact('footerArray'))->with(compact('dcAssets'));
 })->name('comics');

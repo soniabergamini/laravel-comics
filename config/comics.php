@@ -118,7 +118,7 @@ return [
         "description" => "Up in the sky, in the dark of the night, trust no one - for the infected walk among us. Spinning out of the devastating events of THE BATMAN WHO LAUGHS, Superman and Batman are together once more in an all-new monthly series - and they're facing a terrifying new threat that could strike from anywhere. The Dark Knight and the Man of Steel must journey into the depths of Gotham City to learn which of their fellow heroes has been transformed into the horrifying horseman of their most dangerous and deranged foe ever. Our heroes will need to fight to survive, but an even more dangerous question lurkes in the shadows: Can Superman and Batman even trust each other?",
         "thumb" => "https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Batman_Superman_Vol_1_1.jpg",
         "price" => "$3.99",
-        "series" => "Batman/Superman",
+        "series" => "Batman-Superman",
         "sale_date" => "2019-08-28",
         "type" => "comic book",
         "artists" => [
@@ -133,7 +133,7 @@ return [
         "description" => "On a dark and stormy night in the fifth dimension, two mortal foes meet to settle an age-old question once and for all: In a fight between Batman and Superman, who would win? The combatants? Mr. Mxyzptlk and Bat-Mite. And in this battle for the ages, you will find out if a fifth-dimensional imp can bleed. It’s all in this, the ultimate slugfest between the Dark Knight and the Man of Steel-plus a whole lot of magic!",
         "thumb" => "https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg",
         "price" => "$4.99",
-        "series" => "Batman/Superman Annual",
+        "series" => "Batman-Superman Annual",
         "sale_date" => "2020-09-29",
         "type" => "comic book",
         "artists" => [

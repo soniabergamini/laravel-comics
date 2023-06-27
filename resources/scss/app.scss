@@ -19,7 +19,8 @@ header li {
     top: -1.7rem;
 }
 
-#welcomeMainBanner li {
+#welcomeMainBanner li,
+#comicsMainBanner li {
     width: calc(100% / 5 - 1em);
 
     &:hover {
