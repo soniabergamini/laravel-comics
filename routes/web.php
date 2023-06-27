@@ -27,7 +27,7 @@ Route::get('/', function () {
     $socialLinks = config('store.socialLinks');
     $footerArray = array('dcItems' => $dcItems, 'sitesItems' => $sitesItems, 'socialLinks' => $socialLinks);
 
-    return view('homepage', compact('navItems'), compact('footerArray'))->with(compact('slides'))->with(compact('dcAssets'));
+    return view('homepage', compact('navItems', 'footerArray', 'slides', 'dcAssets'));
 })->name('homepage');
 
 Route::get('/comics/{series}', function (string $series) {
@@ -45,5 +45,5 @@ Route::get('/comics/{series}', function (string $series) {
     $socialLinks = config('store.socialLinks');
     $footerArray = array('dcItems' => $dcItems, 'sitesItems' => $sitesItems, 'socialLinks' => $socialLinks);
 
-    return view('comics', compact('navItems'))->with(compact('slides'))->with(compact('footerArray'))->with(compact('dcAssets'));
+    return view('comics', compact('navItems', 'slides', 'footerArray', 'dcAssets'));
 })->name('comics');
