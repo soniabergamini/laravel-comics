@@ -7,7 +7,7 @@
 
     <title>@yield('page-title', 'DC COMICS')</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ Vite::asset('resources/img/favicon.ico') }}"/>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
