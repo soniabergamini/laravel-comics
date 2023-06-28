@@ -91,6 +91,10 @@
             @include('partials.mainbanner')
 
         </main>
+        <script>
+            var comic = {{ Js::from($slides['serie']) }};
+            localStorage.setItem('comic_click', comic);
+        </script>
         @break
     @endif
 @endforeach
