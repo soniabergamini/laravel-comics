@@ -70,9 +70,13 @@ Rinomino /resources/css in /resources/scss
 Rinomino /resources/css/app.css in /resources/scss/app.scss
 
 ###########################################################################################
-# Importo bootstrap (in /resources/scss/app.scss)
+# Importo bootstrap/tailwind (in /resources/scss/app.scss)
 ###########################################################################################
 @import "~bootstrap/scss/bootstrap"; ## --> RIMOSSO
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
     background-color: red;
